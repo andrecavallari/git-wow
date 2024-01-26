@@ -10,8 +10,8 @@ Useful git commands to improve productivity.
   export PATH=$PATH:/full-path/to/git-wow
   ```
 - Reload your terminal
-### Branches comands
 
+## Branch comands
 
 ```bash
 # List and switch to a branch
