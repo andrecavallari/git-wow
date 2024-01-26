@@ -1,0 +1,15 @@
+#!/bin/bash
+
+wow-delete-branch()
+{
+    PS3="Which branch you want to delete? "
+    branch=$(list_branches $1)
+    git branch -D $branch
+}
+
+wow-switch-branch()
+{
+    PS3="Which branch you want to switch to? "
+    branch=$(list_branches $1)
+    git checkout $branch
+}

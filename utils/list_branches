@@ -1,0 +1,14 @@
+#!/bin/bash
+
+list_branches()
+{
+  branches=($(git branch | cut -c 2- | grep ${1:-''}))
+  select branch in ${branches[@]}; do break; done
+
+  if [ $branch ]; then
+      echo $branch
+  else
+      echo 'No branch was selected'
+      exit 1
+  fi
+}
