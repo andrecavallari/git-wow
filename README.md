@@ -17,14 +17,10 @@ Very useful commands when you have a large list of local branches and you want t
 
 ```bash
 # List and switch to a branch
-git wow switch-branch
+# Optionally you can filter by partial name
+git wow switch-branch <partial-name>
 
-# List and switch to a branch filtering by name
-git wow switch-branch <partial-branch-name>
-
-# List and deletes a branch
-git wow delete-branch
-
-# List and delete branch filtering by name
-git wow delete-branch <partial-branch-name>
+# List and delete branch
+# Optionally you can filter by partial name
+git wow delete-branch <partial-name>
 ```
