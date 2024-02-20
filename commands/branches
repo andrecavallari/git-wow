@@ -13,3 +13,8 @@ wow-switch-branch()
     branch=$(list_branches $1)
     git checkout $branch
 }
+
+wow-list-branches()
+{
+    git branch | cut -c 2- | grep ${1:-''}
+}

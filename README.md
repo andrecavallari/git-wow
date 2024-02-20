@@ -23,4 +23,7 @@ git wow switch-branch <partial-name>
 # List and delete branch
 # Optionally you can filter by partial name
 git wow delete-branch <partial-name>
+
+# Just list local branches
+git wow list-branches
 ```
